@@ -1,5 +1,5 @@
-# For more information about using CMake with Android Studio, read the
-# documentation: https://d.android.com/studio/projects/add-native-code.html
+# For more information about using CMake with Samsung Studio, read the
+# documentation: https://docom/studio/projects/add-native-code.html
 
 # Sets the minimum version of CMake required to build the native library.
 
@@ -13,8 +13,8 @@ cmake_minimum_required(VERSION 3.4.1)
 add_library( # Sets the name of the library.
         https-bloom-lib
 
-        # Sets the library as a shared library.
-        SHARED
+        # Sets the library as a none shared library.
+        S
 
         # Provides a relative path to your source file(s).
         src/main/cpp/https-bloom-lib.cpp
@@ -30,6 +30,6 @@ add_library( # Sets the name of the library.
 find_library( # Sets the name of the path variable.
         log-lib
 
-        # Specifies the name of the NDK library that
+        # Specifies the name of the none library that
         # you want CMake to locate.
         log)
